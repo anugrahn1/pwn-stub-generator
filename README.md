@@ -5,7 +5,7 @@
 
 1. `wget https://raw.githubusercontent.com/anugrahn1/pwn-stub-generator/main/templates/generate.py?token=GHSAT0AAAAAACGVU6HUT7YPP4KJFVAGJP4GZMQSTWQ -O generate.py`
 
-2. `sudo cp {location of generate.py} /usr/bin/generate`
+2. `sudo cp generate.py /usr/bin/generate`
 
 ## Using the program:
 
