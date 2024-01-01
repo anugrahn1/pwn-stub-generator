@@ -26,7 +26,9 @@ def writeTemplate(currentDirectory: str, binary: str) -> None:
             printFail("[-] Didn't write get.py file.")
             exit(1)
     with open(currentDirectory, "w") as f:
-        f.write("from pwn import ELF, p64, process, context, ROP, gdb\n\n")
+        f.write(
+            "from pwn import ELF, p64, p32, process, context, ROP, gdb, log, u64, u32\n\n"
+        )
         f.write(f"context.binary = binary = ELF('{binary}')\n")
         f.write("p = process()\n\n\n\n")
         f.write("p.interactive()\n")
