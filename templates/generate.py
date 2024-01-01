@@ -29,7 +29,7 @@ def writeTemplate(currentDirectory: str, binary: str) -> None:
         f.write("from pwn import ELF, p64, process, context, ROP, gdb\n\n")
         f.write(f"context.binary = binary = ELF('{binary}')\n")
         f.write("p = process()\n\n\n\n")
-        f.write("p.interactive()")
+        f.write("p.interactive()\n")
     printSuccess("[+] Wrote get.py file successfuly!")
     exit(0)
 
