@@ -24,7 +24,7 @@ If it detects another `get.py` file, it will ask to overwrite it.
 This is the file it creates, where `test` is the name of the binary you typed:
 
 ```py
-from pwn import ELF, p64, p32, process, context, ROP, gdb, log, u64, u32
+from pwn import ELF, p64, p32, process, context, ROP, gdb, log, u64, u32, remote
 
 context.binary = binary = ELF('test')
 p = process()
