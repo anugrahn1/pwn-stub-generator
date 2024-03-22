@@ -10,7 +10,6 @@ wget https://raw.githubusercontent.com/anugrahn1/pwn-stub-generator/main/templat
 pip install -r requirements.txt
 
 sudo cp generate.py /usr/bin/generate; rm generate.py
-
 ```
 
 ## Using the program:
